@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Upload with Frame Options</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1 id="head1">Add Image/icon</h1>
+<div class="container">
+    <h1>Upload Image</h1>
+    <label for="uploadInput" class="upload-button">Choose File</label>
+    <input type="file" id="uploadInput" accept="image/*">
+    <div id="frameOptionsPopup" class="popup">
+       <h2>Select Frame:</h2>
+       <div class="frame-buttons">
+           <button onclick="selectFrame('none')"><img src="non.jpg" alt="No Frame"></button>
+           <button onclick="selectFrame('heart')"><img src="user_image_frame_1.png" alt="Heart Frame"></button>
+           <button onclick="selectFrame('square')"><img src="user_image_frame_2.png" alt="Square Frame"></button>
+           <button onclick="selectFrame('circle')"><img src="user_image_frame_3.png" alt="Circle Frame"></button>
+           <button onclick="selectFrame('rectangle')"><img src="user_image_frame_4.png" alt="Rectangle Frame"></button>
+       </div>
+    </div>
+    <div id="renderedImage" class="image-container"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
